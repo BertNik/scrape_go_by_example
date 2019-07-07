@@ -92,15 +92,6 @@ _m.base_url                _m.getContentByPath(       _m.get_a(                 
 _m.body                    _m.getLi(                  _m.li                      _m.response                
 _m.bs_obj(                 _m.getLinks(               _m.links                   _m.run(                    
 >>> _m.printLinksWithBaseUrl()
-hello-world
-values
-variables
-constants
-for
-if-else
-switch
-arrays
-...
 https://gobyexample.com/hello-world
 https://gobyexample.com/values
 https://gobyexample.com/variables
