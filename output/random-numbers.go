@@ -1,0 +1,46 @@
+
+
+
+
+
+package main
+
+
+import "time"
+import "fmt"
+import "math/rand"
+
+
+func main() {
+
+
+    fmt.Print(rand.Intn(100), ",")
+    fmt.Print(rand.Intn(100))
+    fmt.Println()
+
+
+    fmt.Println(rand.Float64())
+
+
+    fmt.Print((rand.Float64()*5)+5, ",")
+    fmt.Print((rand.Float64() * 5) + 5)
+    fmt.Println()
+
+
+    s1 := rand.NewSource(time.Now().UnixNano())
+    r1 := rand.New(s1)
+
+
+    fmt.Print(r1.Intn(100), ",")
+    fmt.Print(r1.Intn(100))
+    fmt.Println()
+
+
+$ go run random-numbers.go
+81,87
+0.6645600532184904
+7.123187485356329,8.434115364335547
+0,28
+5,87
+5,87
+
