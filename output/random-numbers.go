@@ -44,3 +44,16 @@ $ go run random-numbers.go
 5,87
 5,87
 
+
+    s2 := rand.NewSource(42)
+    r2 := rand.New(s2)
+    fmt.Print(r2.Intn(100), ",")
+    fmt.Print(r2.Intn(100))
+    fmt.Println()
+    s3 := rand.NewSource(42)
+    r3 := rand.New(s3)
+    fmt.Print(r3.Intn(100), ",")
+    fmt.Print(r3.Intn(100))
+}
+
+

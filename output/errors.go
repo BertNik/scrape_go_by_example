@@ -72,3 +72,12 @@ f2 failed: 42 - can't work with it
 42
 can't work with it
 
+
+    _, e := f2(42)
+    if ae, ok := e.(*argError); ok {
+        fmt.Println(ae.arg)
+        fmt.Println(ae.prob)
+    }
+}
+
+

@@ -33,7 +33,13 @@ func main() {
 
     time.Sleep(time.Second)
 
-
+/*
 $ go run atomic-counters.go
 ops: 41419
+*/
+
+    opsFinal := atomic.LoadUint64(&ops)
+    fmt.Println("ops:", opsFinal)
+}
+
 

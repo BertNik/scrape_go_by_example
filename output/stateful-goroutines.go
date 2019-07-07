@@ -88,3 +88,11 @@ $ go run stateful-goroutines.go
 readOps: 71708
 writeOps: 7177
 
+
+    readOpsFinal := atomic.LoadUint64(&readOps)
+    fmt.Println("readOps:", readOpsFinal)
+    writeOpsFinal := atomic.LoadUint64(&writeOps)
+    fmt.Println("writeOps:", writeOpsFinal)
+}
+
+

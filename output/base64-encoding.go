@@ -23,9 +23,22 @@ func main() {
     sDec, _ := b64.StdEncoding.DecodeString(sEnc)
     fmt.Println(string(sDec))
     fmt.Println()
-
+/*
 
 $ go run base64-encoding.go
 YWJjMTIzIT8kKiYoKSctPUB+
 abc123!?$*&()'-=@~
+*/
+
+
+    uEnc := b64.URLEncoding.EncodeToString([]byte(data))
+    fmt.Println(uEnc)
+    uDec, _ := b64.URLEncoding.DecodeString(uEnc)
+    fmt.Println(string(uDec))
+}
+
+/*
+YWJjMTIzIT8kKiYoKSctPUB-
+abc123!?$*&()'-=@~
+*/
 

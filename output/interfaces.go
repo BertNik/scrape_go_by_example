@@ -60,3 +60,9 @@ $ go run interfaces.go
 78.53981633974483
 31.41592653589793
 
+
+    measure(r)
+    measure(c)
+}
+
+

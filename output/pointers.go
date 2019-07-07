@@ -31,3 +31,14 @@ func main() {
     zeroptr(&i)
     fmt.Println("zeroptr:", i)
 
+
+    fmt.Println("pointer:", &i)
+}
+
+
+$ go run pointers.go
+initial: 1
+zeroval: 1
+zeroptr: 0
+pointer: 0x42131100
+

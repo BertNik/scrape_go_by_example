@@ -27,3 +27,9 @@ $ go run multiple-return-values.go
 7
 7
 
+
+    _, c := vals()
+    fmt.Println(c)
+}
+
+

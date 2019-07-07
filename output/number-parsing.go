@@ -41,3 +41,9 @@ $ go run number-parsing.go
 135
 strconv.ParseInt: parsing "wat": invalid syntax
 
+
+    _, e := strconv.Atoi("wat")
+    fmt.Println(e)
+}
+
+

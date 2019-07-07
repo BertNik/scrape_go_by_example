@@ -36,3 +36,17 @@ func main() {
     _, prs := m["k2"]
     fmt.Println("prs:", prs)
 
+
+    n := map[string]int{"foo": 1, "bar": 2}
+    fmt.Println("map:", n)
+}
+
+
+$ go run maps.go 
+map: map[k1:7 k2:13]
+v1:  7
+len: 2
+map: map[k1:7]
+prs: false
+map: map[bar:2 foo:1]
+

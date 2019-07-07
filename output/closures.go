@@ -35,3 +35,9 @@ $ go run closures.go
 3
 1
 
+
+    newInts := intSeq()
+    fmt.Println(newInts())
+}
+
+

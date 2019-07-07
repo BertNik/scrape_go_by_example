@@ -18,3 +18,14 @@ func main() {
     messages <- "buffered"
     messages <- "channel"
 
+
+    fmt.Println(<-messages)
+    fmt.Println(<-messages)
+}
+
+/*
+$ go run channel-buffering.go 
+buffered
+channel
+
+*/

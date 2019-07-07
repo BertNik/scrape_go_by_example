@@ -41,3 +41,25 @@ func main() {
     fmt.Println(u.Path)
     fmt.Println(u.Fragment)
 
+
+    fmt.Println(u.RawQuery)
+    m, _ := url.ParseQuery(u.RawQuery)
+    fmt.Println(m)
+    fmt.Println(m["k"][0])
+}
+
+
+$ go run url-parsing.go 
+postgres
+user:pass
+user
+pass
+host.com:5432
+host.com
+5432
+/path
+f
+k=v
+map[k:[v]]
+v
+

@@ -32,3 +32,9 @@ $ go run functions.go
 1+2 = 3
 1+2+3 = 6
 
+
+    res = plusPlus(1, 2, 3)
+    fmt.Println("1+2+3 =", res)
+}
+
+

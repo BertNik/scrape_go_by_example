@@ -49,3 +49,8 @@ Worker 2 done
 Worker 5 done
 Worker 3 done
 
+
+    wg.Wait()
+}
+
+

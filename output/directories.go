@@ -81,3 +81,29 @@ func main() {
     err = filepath.Walk("subdir", visit)
 }
 
+
+func visit(p string, info os.FileInfo, err error) error {
+    if err != nil {
+        return err
+    }
+    fmt.Println(" ", p, info.IsDir())
+    return nil
+}
+
+
+$ go run directories.go
+Listing subdir/parent
+  child true
+  file2 false
+  file3 false
+Listing subdir/parent/child
+  file4 false
+Visiting subdir
+  subdir true
+  subdir/file1 false
+  subdir/parent true
+  subdir/parent/child true
+  subdir/parent/child/file4 false
+  subdir/parent/file2 false
+  subdir/parent/file3 false
+

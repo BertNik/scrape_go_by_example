@@ -33,3 +33,9 @@ $ go run epoch.go
 2012-10-31 16:13:58 +0000 UTC
 2012-10-31 16:13:58.292387 +0000 UTC
 
+
+    fmt.Println(time.Unix(secs, 0))
+    fmt.Println(time.Unix(0, nanos))
+}
+
+

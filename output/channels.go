@@ -21,3 +21,9 @@ func main() {
 $ go run channels.go 
 ping
 
+
+    msg := <-messages
+    fmt.Println(msg)
+}
+
+

@@ -29,3 +29,16 @@ func main() {
         done <- true
     }()
 
+
+    fmt.Println("awaiting signal")
+    <-done
+    fmt.Println("exiting")
+}
+
+
+$ go run signals.go
+awaiting signal
+^C
+interrupt
+exiting
+

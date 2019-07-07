@@ -27,3 +27,11 @@ func (s byLength) Less(i, j int) bool {
 $ go run sorting-by-functions.go 
 [kiwi peach banana]
 
+
+func main() {
+    fruits := []string{"peach", "banana", "kiwi"}
+    sort.Sort(byLength(fruits))
+    fmt.Println(fruits)
+}
+
+

@@ -33,3 +33,15 @@ func main() {
 $ echo 'hello'   > /tmp/lines
 $ echo 'filter' >> /tmp/lines
 
+
+    if err := scanner.Err(); err != nil {
+        fmt.Fprintln(os.Stderr, "error:", err)
+        os.Exit(1)
+    }
+}
+
+
+$ cat /tmp/lines | go run line-filters.go
+HELLO
+FILTER
+

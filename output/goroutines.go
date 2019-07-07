@@ -41,3 +41,9 @@ goroutine : 2
 <enter>
 done
 
+
+    fmt.Scanln()
+    fmt.Println("done")
+}
+
+

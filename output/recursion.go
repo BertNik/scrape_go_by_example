@@ -16,3 +16,12 @@ func fact(n int) int {
     return n * fact(n-1)
 }
 
+
+func main() {
+    fmt.Println(fact(7))
+}
+
+
+$ go run recursion.go 
+5040
+

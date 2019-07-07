@@ -30,3 +30,8 @@ func main() {
 $ go run channel-synchronization.go      
 working...done                  
 
+
+    <-done
+}
+
+

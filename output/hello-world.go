@@ -20,3 +20,9 @@ hello-world    hello-world.go
 $ ./hello-world
 hello world
 
+
+func main() {
+    fmt.Println("hello world")
+}
+
+

@@ -67,3 +67,17 @@ Usage of ./command-line-flags:
   -svar="bar": a string var
   -word="foo": a string
 
+
+    fmt.Println("word:", *wordPtr)
+    fmt.Println("numb:", *numbPtr)
+    fmt.Println("fork:", *boolPtr)
+    fmt.Println("svar:", svar)
+    fmt.Println("tail:", flag.Args())
+}
+
+
+$ ./command-line-flags -wat
+flag provided but not defined: -wat
+Usage of ./command-line-flags:
+...
+

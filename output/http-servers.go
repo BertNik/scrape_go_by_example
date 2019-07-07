@@ -38,3 +38,11 @@ func main() {
 
 $ go run http-servers.go &
 
+
+    http.ListenAndServe(":8090", nil)
+}
+
+
+$ curl localhost:8090/hello
+hello
+

@@ -50,3 +50,12 @@ worker 3 finished job 3
 worker 1 finished job 4
 worker 2 finished job 5
 
+
+    for a := 1; a <= 5; a++ {
+        <-results
+    }
+}
+
+
+real    0m2.358s
+

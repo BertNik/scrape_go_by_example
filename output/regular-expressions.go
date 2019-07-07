@@ -71,3 +71,10 @@ p([a-z]+)ch
 a <fruit>
 a PEACH
 
+
+    in := []byte("a peach")
+    out := r.ReplaceAllFunc(in, bytes.ToUpper)
+    fmt.Println(string(out))
+}
+
+

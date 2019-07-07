@@ -22,3 +22,10 @@ $ go run range-over-channels.go
 one
 two
 
+
+    for elem := range queue {
+        fmt.Println(elem)
+    }
+}
+
+

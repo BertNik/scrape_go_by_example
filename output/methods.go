@@ -38,3 +38,10 @@ perim: 30
 area:  50
 perim: 30
 
+
+    rp := &r
+    fmt.Println("area: ", rp.area())
+    fmt.Println("perim:", rp.perim())
+}
+
+

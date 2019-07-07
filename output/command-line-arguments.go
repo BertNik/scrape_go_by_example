@@ -26,3 +26,10 @@ $ ./command-line-arguments a b c d
 [a b c d]
 c
 
+
+    fmt.Println(argsWithProg)
+    fmt.Println(argsWithoutProg)
+    fmt.Println(arg)
+}
+
+

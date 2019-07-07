@@ -31,3 +31,9 @@ $ go run variadic-functions.go
 [1 2 3] 6
 [1 2 3 4] 10
 
+
+    nums := []int{1, 2, 3, 4}
+    sum(nums...)
+}
+
+
