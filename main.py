@@ -60,7 +60,7 @@ class Main:
     def getCodeContent(self, url):
         bs = self.getContentByPath(url)
         text_array = []
-        for i in bs.select('.leading'):
+        for i in bs.select('.leading, .code'):
             text_array.append(i.text)
         return "".join(text_array)
     
