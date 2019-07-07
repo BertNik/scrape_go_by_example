@@ -107,6 +107,7 @@ https://gobyexample.com/functions
 https://gobyexample.com/multiple-return-values
 https://gobyexample.com/variadic-functions
 https://gobyexample.com/closures
+...
 >>> _m.writeFile()
 ----------------------------------------------------------------------------------------------------
 
@@ -124,4 +125,7 @@ hello world
 
 
 $ go build hello-world.go
+
+#hot reload module if changes are made to main.py
+_m = m.run(main)
 '''
